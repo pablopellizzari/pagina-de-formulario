@@ -14,8 +14,8 @@
     <section>
         <form action="" method="get">
 
-            <!-- DADOS PESSOAIS -->
-            <fieldset>
+            <!--<fieldset>
+
                 <legend>Dados Pessoais</legend>
                 <label for="userName">Digite seu nome:</label>
                 <input type="text" name="userName" required>
@@ -36,11 +36,57 @@
                 <input type="file" name="userImage" accept="image/*">
                 <br><br>
             </fieldset>
-
-            <button type="submit">Enviar</button>
         </form>
-    </section>
+    </section> -->
 
-</body>
+            <fieldset>
+                <legend>Perfil</legend>
+
+                <p>Gênero:</p>
+                <input type="radio" name="userGender" value="Feminino">
+                <label for="userGender">Feminino</label>
+
+                <input type="radio" name="userGender" value="Masculino">
+                <label for="userGender">Masculino</label>
+
+                <input type="radio" name="userGender" value="Outro">
+                <label for="userGender">Outro</label>
+                <br><br>
+
+
+                <label for="userMaritalStatus">Estado civil:</label>
+                <select name="userMaritalStatus">
+                    <option value="casado">Casado</option>
+                    <option value="solteiro">Solteiro</option>
+                    <option value="divorciado">Divorciado</option>
+                </select>
+
+                <br><br>
+
+                <label for="userState">Estado:</label>
+                <select name="userState">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </select>
+
+                <button type="submit">Enviar</button>
 
 </html>
