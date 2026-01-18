@@ -38,10 +38,12 @@
                     <input id="userEmail" type="email" name="userEmail" required>
                     <br>
                     <label for="userPhone">Digite seu telefone:</label>
-                    <input id="userPhone" type="tel" name="userPhone" placeholder="DDD+número" pattern="[0-9]{11}">
+                    <input id="userPhone" type="tel" name="userPhone" placeholder="DDD+número" pattern="[0-9]{11}" aria-describedby="userPhoneInfo">
+                    <small id="userPhoneInfo">Preencha com 11 dígitos no formato DDD+número</small>
                     <br>
                     <label for="userImage">Selecione sua foto:</label>
-                    <input id="userImage" type="file" name="userImage" accept="image/*">
+                    <input id="userImage" type="file" name="userImage" accept="image/*" aria-describedby="userImageInfo">
+                    <small id="userImageInfo">Envie uma foto no formato JPG ou PNG</small>
                     <br><br>
                 </fieldset>
 
@@ -177,8 +179,8 @@
                     <label for="userGetResult">Desejo receber o resultado por e-mail</label><br>
                 </fieldset>
 
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpar</button>
+                <button type="submit" aria-label="Enviar dados do usuario">Enviar</button>
+                <button type="reset" aria-label="Limpar dados do usuario">Limpar</button>
 
             </form>
         </section>
